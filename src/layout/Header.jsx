@@ -1,11 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Button from "../components/common/Button";
 
 export default function Header() {
   return (
     <div className="font-poppins min-h-screen flex flex-col">
-      <header className="flex items-center justify-between border-b p-6 shadow-md">
+      <header className="flex items-center justify-between border-b p-6 shadow-sm">
         <div className="ml-10">LOGO</div>
         <div className="flex space-x-4 ml-10 text-lg font-semibold">
           <NavLink to="/menu">MENU</NavLink>
@@ -17,6 +17,9 @@ export default function Header() {
           <Button type="registration">Join now</Button>
         </div>
       </header>
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 }
