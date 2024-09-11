@@ -7,7 +7,7 @@ export default function Header() {
     <div className="font-poppins min-h-screen flex flex-col">
       <header className="flex items-center justify-between border-b p-6 shadow-md">
         <div className="ml-10">LOGO</div>
-        <div className="flex space-x-4 ml-10">
+        <div className="flex space-x-4 ml-10 text-lg font-semibold">
           <NavLink to="/menu">MENU</NavLink>
           <NavLink to="/rewards">REWARDS</NavLink>
           <NavLink to="/gift-cards">GIFT CARDS</NavLink>
