@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         custom: {
-
+          100: "#181C14"
         }
       },
     },
