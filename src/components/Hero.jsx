@@ -19,6 +19,13 @@ export default function Hero() {
       buttonText: "Explore More",
     },
     {
+      src: "https://cdn.pixabay.com/photo/2024/05/16/21/05/latte-8766985_640.jpg",
+      title: "Sip into serenity",
+      subtitle: "Experience the perfect balance of flavor and relaxation with every cup.",
+      buttonType: "order",
+      buttonText: "Order Now"
+    },
+    {
       src: "https://cdn.pixabay.com/photo/2022/01/25/11/30/takeaway-6965921_640.jpg",
       title: "Your treat awaits!",
       subtitle:

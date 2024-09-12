@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Button from "../components/common/Button";
+import Footer from "./Footer";
 
 export default function Header() {
   return (
@@ -20,6 +21,7 @@ export default function Header() {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 }
