@@ -21,7 +21,9 @@ export default function Header() {
       <main>
         <Outlet />
       </main>
+
       <Footer />
+     
     </div>
   );
 }

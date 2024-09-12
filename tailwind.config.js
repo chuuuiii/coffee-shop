@@ -18,7 +18,8 @@ export default {
     },
   },
   plugins: [
-    require('daisyui')
+    require('daisyui'),
+    ('@tailwindcss/forms')
   ],
   daisyui: {
     themes: ['dracula']
