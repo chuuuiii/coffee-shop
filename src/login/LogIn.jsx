@@ -66,7 +66,7 @@ export default function LogIn() {
           <p className="mt-10 text-center text-sm text-gray-500">
             Not a member?{' '}
             <a href="#" className="font-semibold leading-6 text-green-500 hover:text-green-600">
-              Start a 14 day free trial
+              Sign up
             </a>
           </p>
         </div>
