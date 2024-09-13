@@ -16,7 +16,6 @@ export default function Footer() {
             </ul>
           </div>
 
-
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
@@ -26,7 +25,6 @@ export default function Footer() {
               <li><a href="#" className="hover:underline">Delivery</a></li>
             </ul>
           </div>
-
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Help Center</h3>

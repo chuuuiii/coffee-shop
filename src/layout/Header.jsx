@@ -7,20 +7,20 @@ import LogIn from "../login/LogIn";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showLoginForm, setShowLoginForm] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Tracks screen size
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Update mobile state
+      setIsMobile(window.innerWidth < 768); 
       if (window.innerWidth >= 768) {
-        setMenuOpen(false); // Ensure the menu closes on larger screens
+        setMenuOpen(false); 
       }
     };
 
     window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize); // Properly remove the event listener
+      window.removeEventListener("resize", handleResize); 
     };
   }, []);
 
@@ -29,7 +29,7 @@ export default function Header() {
   };
 
   return (
-    <div className="font-poppins min-h-screen flex flex-col">
+    <div className="flex flex-col min-h-screen font-poppins">
       {!showLoginForm && (
         <div>
           <header className="flex items-center justify-between border-b p-6 shadow-sm">
@@ -46,7 +46,7 @@ export default function Header() {
               <NavLink to="/gift-cards">GIFT CARDS</NavLink>
             </div>
 
-            {/* Mobile Menu Toggle */}
+   
             <button
               className={`md:hidden btn btn-circle swap swap-rotate ${
                 menuOpen ? "absolute top-4 right-4" : ""
@@ -112,7 +112,9 @@ export default function Header() {
           </header>
         </div>
       )}
-      <main>{showLoginForm ? <LogIn /> : <Outlet />}</main>
+      <main className="flex-1">
+        {showLoginForm ? <LogIn /> : <Outlet />}
+        </main>
       {!showLoginForm && <Footer />}
     </div>
   );
