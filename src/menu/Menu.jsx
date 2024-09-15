@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button from '../components/common/Button'
 import SidebarMenu from '../sidebar-menu/SidebarMenu';
 
-const buttonTypes = ['menu', 'feature', 'previous', 'favorite'];
+const buttonTypes = ['menu', 'featured', 'previous', 'favorite'];
 
 export default function Menu() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,7 +13,6 @@ export default function Menu() {
       setIsSidebarOpen(!isSidebarOpen)
     }
   }
-
 
   return (
     <div className='bg-gray-100 border-b shadow-sm'>
