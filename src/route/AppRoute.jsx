@@ -8,14 +8,14 @@ import {
 
 import Header from '../layout/Header';
 import Hero from '../components/Hero';
-import Menu from '../menu/Menu';
+// import Menu from '../menu/Menu';
 
 const AppRoute = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<Header />} >
         <Route index element={<Hero />} />
-        <Route path='/menu' element={<Menu />} />
+        {/* <Route path='/menu' element={<Menu />} /> */}
 
       </Route>
 
